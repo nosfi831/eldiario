@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio 1</title>
+  </head>
+
+  <body>
+    <div class="card main_card"><div></div></div>
+    <div class="card secondary_card"><div></div></div>
+    <div class="card secondary_card"><div></div></div>
+    <div class="card secondary_card"><div></div></div>
+    <div class="card secondary_card"><div></div></div>
+    <div class="card secondary_card"><div></div></div>
+    <div class="card secondary_card"><div></div></div>
+  </body>
+
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      background: #f2f2f2;
+    }
+
+    .main_card {
+      flex-basis: 50%;
+    }
+
+    .secondary_card {
+      flex-basis: 25%;
+    }
+
+    .card > div {
+      height: 50px;
+      margin: 7.5px;
+      background: white;
+      box-shadow: 3px 5px 27px -5px #888;
+    }
+
+    @media (max-width: 992px) {
+        .main_card {
+            flex-basis: 100%;
+        }
+
+        .secondary_card {
+            flex-basis: 50%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .secondary_card {
+            flex-basis: 100%;
+        }
+    }
+  </style>
+</html>
